@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN8NQNeLi+YF6pdDk2DBXY4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Shivansh1703/Beginner-projects/blob/main/Jumbled%20Word%20Game\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "C7kfRKZc_uPv"
+      },
+      "outputs": [],
+      "source": [
+        "import random #random is a python built in function"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "words = ['computer', 'python', 'science', 'programming', 'wallet', 'friction', 'conditioner', 'reciprocal', 'clever', 'game']# This is a list\n",
+        "word = random.choice(words)\n",
+        "\n",
+        "jumble = ''.join(random.sample(word, len(word)))\n",
+        "\n",
+        "print(f\"The jumble word is {jumble}\")\n",
+        "\n",
+        "guess = input(\"Write your guess: \")\n",
+        "\n",
+        "if guess == word:\n",
+        "    print(\"Correct\")\n",
+        "else:\n",
+        "    print(f\"Incorrect: The correct word is {word}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0In2i0eHAaOQ",
+        "outputId": "143354bb-824d-424f-c224-99abaf9d42a7"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The jumble word is mgngraorpim\n",
+            "Write your guess: computer\n",
+            "Incorrect: The word is programming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "skEtqBd4AwM2"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
